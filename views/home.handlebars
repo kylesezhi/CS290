@@ -1,0 +1,46 @@
+<script src="/ajax.js"></script>
+<div class="pure-g">
+    <div class="pure-u-1-24"></div>
+    <div class="pure-u-22-24"><p>
+
+<h1>Workout Tracker</h1>
+<p>
+<form class="pure-form">
+  <fieldset>
+    <legend>Add new exercise</legend>
+    <label for="name">Exercise:</label>
+    <input id="name" type="text" name="name" id="name" required>
+    <label for="name">Repetitions:</label>
+    <input id="reps" type="text" name="reps" id="reps" required>
+    <label for="weight">Weight:</label>
+    <input id="weight" type="text" name="weight" id="weight" required>
+    <select name="lbs" id="lbs">
+      <option value="1">pounds</option>
+      <option value="0">kilograms</option>
+    </select>
+    <label for="date">Date:</label>
+    <input id="date" type="text" name="date" placeholder="YYYY-MM-DD" required>
+    <input class="pure-button pure-button-primary" type="submit" id="addExercise" value="Add Exercise">
+  </fieldset>
+</form>
+</p>
+
+<p>
+<table class="pure-table pure-table-horizontal">
+  <thead>
+    <tr>
+      <th>Exercise</th>
+      <th>Repetitions</th>
+      <th>Weight</th>
+      <th>Date</th>
+      <th>Delete</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody id="tableContent"></tbody>
+</table>
+</p>
+
+</p></div>
+<div class="pure-u-1-24"></div>
+</div>
